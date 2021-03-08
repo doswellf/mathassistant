@@ -1,7 +1,7 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-- file: intro
+file: intro
+sections:
+- file: markdown
+- file: notebooks
 - file: content
-  sections:
-    - file: markdown
-    - file: notebooks
+- file: JupyterMaximaBookTest101
+- file: JupyterMaximaBookTest101

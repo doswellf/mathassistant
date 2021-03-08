@@ -1,0 +1,234 @@
+2021-03-08 16:02:32 [INFO] <KERNEL> Starting maxima-jupyter kernel
+2021-03-08 16:02:32 [INFO] <KERNEL> Parsing connection file /tmp/tmpcjdb3nwz.json
+2021-03-08 16:02:32 [INFO] <KERNEL> (OBJ (shell_port . 33427)
+                                     (iopub_port . 35973) (stdin_port . 44115)
+                                     (control_port . 39995) (hb_port . 49193)
+                                     (ip . 127.0.0.1)
+                                     (key . 141745b4-18c284ffdb88ac003405ee1a)
+                                     (transport . tcp)
+                                     (signature_scheme . hmac-sha256)
+                                     (kernel_name . maxima))
+2021-03-08 16:02:32 [INFO] <MAC> Starting message authentification
+2021-03-08 16:02:32 [INFO] <MAC> Using hmac with sha256 digest for message signing.
+2021-03-08 16:02:32 [INFO] <HB-CHANNEL> Starting channel on tcp://127.0.0.1:49193
+2021-03-08 16:02:32 [INFO] <IOPUB-CHANNEL> Starting channel on tcp://127.0.0.1:35973
+2021-03-08 16:02:32 [INFO] <SHELL-CHANNEL> Starting channel on tcp://127.0.0.1:33427
+2021-03-08 16:02:32 [INFO] <STDIN-CHANNEL> Starting channel on tcp://127.0.0.1:44115
+2021-03-08 16:02:32 [INFO] <CONTROL-CHANNEL> Starting channel on tcp://127.0.0.1:39995
+2021-03-08 16:02:32 [INFO] <HISTORY> Starting history
+2021-03-08 16:02:32 [INFO] <HB-CHANNEL> Starting thread
+2021-03-08 16:02:32 [INFO] <KERNEL> Waiting for control message
+2021-03-08 16:02:32 [INFO] <KERNEL> Loading CLHS map
+2021-03-08 16:02:32 [INFO] <KERNEL> Handling kernel_info_request message
+2021-03-08 16:02:32 [INFO] <KERNEL> Handling kernel_info_request message
+2021-03-08 16:02:32 [INFO] <KERNEL> Handling execute_request message
+2021-03-08 16:02:32 [INFO] <KERNEL> eval diff(7*x^5,x);
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Parsed expression to evaluate: ((DISPLAYINPUT)
+                                                                    NIL
+                                                                    (($DIFF)
+                                                                     ((MTIMES)
+                                                                      7
+                                                                      ((MEXPT)
+                                                                       $X 5))
+                                                                     $X))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Evaluated result: ((DISPLAYINPUT SIMP) NIL
+                                                       ((MTIMES SIMP) 35
+                                                        ((MEXPT SIMP) $X 4)))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Handling execute_request message
+2021-03-08 16:02:32 [INFO] <KERNEL> eval diff(7*x^5,x,2);
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Parsed expression to evaluate: ((DISPLAYINPUT)
+                                                                    NIL
+                                                                    (($DIFF)
+                                                                     ((MTIMES)
+                                                                      7
+                                                                      ((MEXPT)
+                                                                       $X 5))
+                                                                     $X 2))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Evaluated result: ((DISPLAYINPUT SIMP) NIL
+                                                       ((MTIMES SIMP) 140
+                                                        ((MEXPT SIMP) $X 3)))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Handling execute_request message
+2021-03-08 16:02:32 [INFO] <KERNEL> eval diff(7*x^5,x,3);
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Parsed expression to evaluate: ((DISPLAYINPUT)
+                                                                    NIL
+                                                                    (($DIFF)
+                                                                     ((MTIMES)
+                                                                      7
+                                                                      ((MEXPT)
+                                                                       $X 5))
+                                                                     $X 3))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Evaluated result: ((DISPLAYINPUT SIMP) NIL
+                                                       ((MTIMES SIMP) 420
+                                                        ((MEXPT SIMP) $X 2)))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Handling execute_request message
+2021-03-08 16:02:32 [INFO] <KERNEL> eval diff(7*x^5,x,4);
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Parsed expression to evaluate: ((DISPLAYINPUT)
+                                                                    NIL
+                                                                    (($DIFF)
+                                                                     ((MTIMES)
+                                                                      7
+                                                                      ((MEXPT)
+                                                                       $X 5))
+                                                                     $X 4))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Evaluated result: ((DISPLAYINPUT SIMP) NIL
+                                                       ((MTIMES SIMP) 840 $X))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Handling execute_request message
+2021-03-08 16:02:32 [INFO] <KERNEL> eval integrate(integrate(5*x^2*3*y^3,x,2),y,2);
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Parsed expression to evaluate: ((DISPLAYINPUT)
+                                                                    NIL
+                                                                    (($INTEGRATE)
+                                                                     (($INTEGRATE)
+                                                                      ((MTIMES)
+                                                                       5
+                                                                       ((MEXPT)
+                                                                        $X 2)
+                                                                       3
+                                                                       ((MEXPT)
+                                                                        $Y 3))
+                                                                      $X 2)
+                                                                     $Y 2))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Evaluated result: ((DISPLAYINPUT SIMP) NIL
+                                                       ((MTIMES SIMP)
+                                                        ((RAT SIMP) 5 4)
+                                                        ((MEXPT SIMP) $X 3)
+                                                        ((MEXPT SIMP) $Y 4)))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Handling execute_request message
+2021-03-08 16:02:32 [INFO] <KERNEL> eval load(vect);
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Parsed expression to evaluate: ((DISPLAYINPUT)
+                                                                    NIL
+                                                                    (($LOAD)
+                                                                     $VECT))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Evaluated result: ((DISPLAYINPUT SIMP) NIL
+                                                       "/usr/local/share/maxima/5.44.0/share/vector/vect.mac")
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Handling execute_request message
+2021-03-08 16:02:32 [INFO] <KERNEL> eval load(eigen);
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Parsed expression to evaluate: ((DISPLAYINPUT)
+                                                                    NIL
+                                                                    (($LOAD)
+                                                                     $EIGEN))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Evaluated result: ((DISPLAYINPUT SIMP) NIL
+                                                       "/usr/local/share/maxima/5.44.0/share/matrix/eigen.mac")
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Handling execute_request message
+2021-03-08 16:02:32 [INFO] <KERNEL> eval E:[E_x, E_y, E_z];
+H:[H_x,H_y,H_z];
+express(curl(E)) = diff(H,t);
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Parsed expression to evaluate: ((DISPLAYINPUT)
+                                                                    NIL
+                                                                    ((MSETQ)
+                                                                     |$e|
+                                                                     ((MLIST)
+                                                                      |$E_x|
+                                                                      |$E_y|
+                                                                      |$E_z|)))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Evaluated result: ((DISPLAYINPUT SIMP) NIL
+                                                       ((MLIST SIMP) |$E_x|
+                                                        |$E_y| |$E_z|))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Parsed expression to evaluate: ((DISPLAYINPUT)
+                                                                    NIL
+                                                                    ((MSETQ)
+                                                                     |$h|
+                                                                     ((MLIST)
+                                                                      |$H_x|
+                                                                      |$H_y|
+                                                                      |$H_z|)))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Evaluated result: ((DISPLAYINPUT SIMP) NIL
+                                                       ((MLIST SIMP) |$H_x|
+                                                        |$H_y| |$H_z|))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Parsed expression to evaluate: ((DISPLAYINPUT)
+                                                                    NIL
+                                                                    ((MEQUAL)
+                                                                     (($EXPRESS)
+                                                                      (($CURL)
+                                                                       |$e|))
+                                                                     (($DIFF)
+                                                                      |$h| $T)))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Evaluated result: ((DISPLAYINPUT SIMP) NIL
+                                                       ((MEQUAL SIMP)
+                                                        ((MLIST SIMP
+                                                          (171
+                                                           "/usr/local/share/maxima/5.44.0/share/vector/vect.mac"
+                                                           SRC $EXPRESS1 139))
+                                                         ((MPLUS SIMP)
+                                                          ((MTIMES SIMP) -1
+                                                           ((%DERIVATIVE SIMP
+                                                             (173
+                                                              "/usr/local/share/maxima/5.44.0/share/vector/vect.mac"
+                                                              SRC $EXPRESS1
+                                                              139))
+                                                            |$E_y| $Z 1))
+                                                          ((%DERIVATIVE SIMP
+                                                            (172
+                                                             "/usr/local/share/maxima/5.44.0/share/vector/vect.mac"
+                                                             SRC $EXPRESS1
+                                                             139))
+                                                           |$E_z| $Y 1))
+                                                         ((MPLUS SIMP
+                                                           (176
+                                                            "/usr/local/share/maxima/5.44.0/share/vector/vect.mac"
+                                                            SRC $EXPRESS1 139))
+                                                          ((%DERIVATIVE SIMP
+                                                            (175
+                                                             "/usr/local/share/maxima/5.44.0/share/vector/vect.mac"
+                                                             SRC $EXPRESS1
+                                                             139))
+                                                           |$E_x| $Z 1)
+                                                          ((MTIMES SIMP) -1
+                                                           ((%DERIVATIVE SIMP
+                                                             (176
+                                                              "/usr/local/share/maxima/5.44.0/share/vector/vect.mac"
+                                                              SRC $EXPRESS1
+                                                              139))
+                                                            |$E_z| $X 1)))
+                                                         ((MPLUS SIMP)
+                                                          ((MTIMES SIMP) -1
+                                                           ((%DERIVATIVE SIMP
+                                                             (179
+                                                              "/usr/local/share/maxima/5.44.0/share/vector/vect.mac"
+                                                              SRC $EXPRESS1
+                                                              139))
+                                                            |$E_x| $Y 1))
+                                                          ((%DERIVATIVE SIMP
+                                                            (178
+                                                             "/usr/local/share/maxima/5.44.0/share/vector/vect.mac"
+                                                             SRC $EXPRESS1
+                                                             139))
+                                                           |$E_y| $X 1)))
+                                                        ((MLIST SIMP) 0 0 0)))
+
+2021-03-08 16:02:32 [INFO] <KERNEL> Handling shutdown_request message
+2021-03-08 16:02:32 [INFO] <KERNEL> Stopping maxima-jupyter kernel
+2021-03-08 16:02:32 [INFO] <HB-CHANNEL> Stopping thread
+2021-03-08 16:02:32 [INFO] <HB-CHANNEL> Stopping channel
+2021-03-08 16:02:32 [INFO] <IOPUB-CHANNEL> Stopping channel
+2021-03-08 16:02:32 [INFO] <SHELL-CHANNEL> Stopping channel
+2021-03-08 16:02:32 [INFO] <STDIN-CHANNEL> Stopping channel
+2021-03-08 16:02:32 [INFO] <CONTROL-CHANNEL> Stopping channel
+2021-03-08 16:02:32 [INFO] <MAC> Stopping message authentification
+2021-03-08 16:02:32 [INFO] <HISTORY> Stopping history
