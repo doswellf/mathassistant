@@ -1,0 +1,16 @@
+This Is A Jupyter Notebook That Talks To The Maxima CAS
+
+diff(7*x^5,x);
+
+diff(7*x^5,x,2);
+
+diff(7*x^5,x,3);
+
+diff(7*x^5,x,4);
+
+integrate(integrate(5*x^2*3*y^3,x,2),y,2);
+
+load(vect);
+
+load(eigen);
+
