@@ -1,4 +1,4 @@
-This Is A Jupyter Notebook That Talks To The Maxima CAS
+# Jupyter-Maxima Notebook
 
 diff(7*x^5,x);
 
@@ -16,5 +16,5 @@ load(eigen);
 
 E:[E_x, E_y, E_z];
 H:[H_x,H_y,H_z];
-express(curl(E)) = diff(H,t);
+express(curl(E)) = 'diff(H,t);
 

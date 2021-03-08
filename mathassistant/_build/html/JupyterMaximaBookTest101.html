@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jupyter And Maxima &#8212; MathAssistant</title>
+    <title>Jupyter-Maxima Notebook &#8212; MathAssistant</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -52,6 +52,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Content in Jupyter Book" href="content.html" />
@@ -109,12 +111,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Jupyter And Maxima
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Jupyter And Maxima
+   Jupyter-Maxima Notebook
   </a>
  </li>
 </ul>
@@ -157,9 +154,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/JupyterMaximaBookTest101.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/JupyterMaximaBookTest101.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -177,6 +174,23 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/JupyterMaximaBookTest101.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -190,11 +204,102 @@
         
               <div>
                 
-  <div class="section" id="jupyter-and-maxima">
-<h1>Jupyter And Maxima<a class="headerlink" href="#jupyter-and-maxima" title="Permalink to this headline">¶</a></h1>
-<p>This is an example of a jupyter notebook that connects directly to the Maxima CAS.
-You can directly interact with maxima from within jupyter, instead of using an indirect interface.
-This is not as versatile as SageMath but doesn’t load your cpu down either.</p>
+  <div class="section" id="jupyter-maxima-notebook">
+<h1>Jupyter-Maxima Notebook<a class="headerlink" href="#jupyter-maxima-notebook" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-maxima notranslate"><div class="highlight"><pre><span></span>diff(7*x^5,x);
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\tag{${\it \%o}_{1}$}35\,x^4\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-maxima notranslate"><div class="highlight"><pre><span></span>diff(7*x^5,x,2);
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\tag{${\it \%o}_{2}$}140\,x^3\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-maxima notranslate"><div class="highlight"><pre><span></span>diff(7*x^5,x,3);
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\tag{${\it \%o}_{3}$}420\,x^2\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-maxima notranslate"><div class="highlight"><pre><span></span>diff(7*x^5,x,4);
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\tag{${\it \%o}_{4}$}840\,x\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-maxima notranslate"><div class="highlight"><pre><span></span>integrate(integrate(5*x^2*3*y^3,x,2),y,2);
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\tag{${\it \%o}_{5}$}\frac{5\,x^3\,y^4}{4}\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-maxima notranslate"><div class="highlight"><pre><span></span>load(vect);
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\tag{${\it \%o}_{6}$}\mbox{ /usr/local/share/maxima/5.44.0/share/vector/vect.mac }\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-maxima notranslate"><div class="highlight"><pre><span></span>load(eigen);
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\tag{${\it \%o}_{7}$}\mbox{ /usr/local/share/maxima/5.44.0/share/matrix/eigen.mac }\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-maxima notranslate"><div class="highlight"><pre><span></span>E:[E_x, E_y, E_z];
+H:[H_x,H_y,H_z];
+express(curl(E)) = &#39;diff(H,t);
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\tag{${\it \%o}_{8}$}\left[ {\it E\_x} , {\it E\_y} , {\it E\_z} \right] \]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\tag{${\it \%o}_{9}$}\left[ {\it H\_x} , {\it H\_y} , {\it H\_z} \right] \]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\tag{${\it \%o}_{10}$}\left[ \frac{d}{d\,y}\,{\it E\_z}-\frac{d}{d\,z}\,{\it E\_y} , \frac{d}{d\,z}\,{\it E\_x}-\frac{d}{d\,x}\,{\it E\_z} , \frac{d}{d\,x}\,{\it E\_y}-\frac{d}{d\,y}\,{\it E\_x} \right] =\frac{d}{d\,t}\,\left[ {\it H\_x} , {\it H\_y} , {\it H\_z} \right] \]</div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -206,16 +311,16 @@ This is not as versatile as SageMath but doesn’t load your cpu down either.</p
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "maxima"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "maxima",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'maxima'</script>
 
               </div>
               
